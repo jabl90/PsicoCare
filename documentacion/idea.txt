@@ -3,6 +3,8 @@ Nombre de la aplicación: Psicocare
 
 Objetivo / función: Crear una aplicación para el autocuidado y salud mental
 
+Características
+
 Vamos a ser lo futuros bill gates <3
 
 
