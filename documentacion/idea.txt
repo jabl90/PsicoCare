@@ -1,2 +1,4 @@
 
 Nombre de la aplicación: Psicocare
+
+Objetivo / función: 
