@@ -1,4 +1,4 @@
 
 Nombre de la aplicación: Psicocare
 
-Objetivo / función: 
+Objetivo / función: Crear una aplicación para el autocuidado y salud mental
