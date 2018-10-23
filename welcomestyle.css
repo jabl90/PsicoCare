@@ -7,3 +7,61 @@ padding: 15px;
 text-align: justify;
 
 }
+
+@font-face {
+    font-family: gotham;
+    src: url('esta.otf');
+   unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
+  }
+
+
+header{margin: 20px;
+    background-color: rgb(157, 216, 183);
+    border: rgb(157, 216, 183);
+    border-radius: 15px;
+display: block;
+background-repeat: no-repeat}
+
+input[type=text] {background-image: url(.png);
+    padding-left: 22px;
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+margin: 5px;}
+
+input[type=email] {background-image: url(envelope.png);
+    padding-left: 22px;
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 5px;}
+
+input[type=password] {background-image: url(lock.png);
+    padding-left: 22px;
+    background-position: left;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 5px;}
+
+
+
+input[type=checkbox] {color: white;
+    margin: 5px;}
+
+
+    @media screen and (max-width:968px){
+      input{width: 100%;}
+      div {width: 100%;}
+        
+     
+        }
+     
+     @media screen and (min-width:358px){
+        input{width: 100%;}
+        div {width: 100%;}
+
+         
+     }

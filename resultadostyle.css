@@ -45,13 +45,13 @@ div{ margin: 30px;
     display: inline-block; 
 }
 
-@media screen and (max-width:768px){
-    div{width: 100%;}
+@media screen and (max-width:968px){
+   section > div{width: 100%;}
    
 
    }
-}
-@media screen and (min-width:368px){
-   div{width: 100%;}
+
+@media screen and (min-width:358px){
+   section > div{width: 100%;}
     
 }
