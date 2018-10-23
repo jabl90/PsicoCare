@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>welcome</title>
+</head>
+
+<body>
+    <div id="myform">
+        <h1>Welcome to PsicoCare</h1>
+
+        <form method="POST" action="resultado.html">
+            <div>
+                <label for="bday">Enter your birthday:<br/></label>
+                <input type="date" id="bday" name="bday" placeholder="Enter your birthday">
+            </div>
+
+            <div>
+
+                <div>
+                    <input type="text" name="nombre" placeholder="Nickname" id="nombre">
+
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="email" id="email" required>
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <input type="password" name="confirmpassword" placeholder="Confirm password" id="confirm_password"
+                        required minlength="9" maxlength="11">
+                </div>
+                <input type="checkbox" name="Acepto" id="Acepto" value="1">
+                <label for="acepto">Acepto <span><strong> <a href="#"> términos</a></strong></span> y<span><strong><a
+                                href="#"> condiciones</a></strong></span></label>
+            </div>
+
+            <div>
+                <button>Create Account</button>
+
+                <a href="main_profile.html"> <br />I already have an account</a>
+
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <h4>Find us on: </h4>
+    </footer>
+
+</body>
+
+</html>
