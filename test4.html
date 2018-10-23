@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,17 @@
 </head>
 
 <body>
-   
-<header>
+
+    <header>
         <!--Menu del header-->
-        </header>
-        <section>
-        <h1><u>Question 4 out of 5.</u></h1><!--Increase font size,place center, colorfull design-->
-        
+    </header>
+    <section>
+        <h1><u>Question 4 out of 5.</u></h1>
+        <!--Increase font size,place center, colorfull design-->
+
         <br>
-        <ul > <!--Unordered HTML List - Choose List Item Marker
+        <ul>
+            <!--Unordered HTML List - Choose List Item Marker
         
             The CSS list-style-type property is used to define the style of the list item marker:
             Value 	Description
@@ -26,29 +29,40 @@
             circle 	Sets the list item marker to a circle
             square 	Sets the list item marker to a square
             none 	The list items will not be marked  (https://www.w3schools.com/HTML/html_lists.asp)-->
-        
-                <li>4.  Question?<br></li>
-        
-        
-        
-        </ul>
 
-        <div>
-            <button>Siempre</button>
-            <button>A veces</button>
-            <button>Casi nunca</button>
-            <button>Nunca</button>
+            <li>4. Question?<br></li>
+
+
+
+        </ul>
+        <form method="POST" action="receptionform.html">
+
+            <div>
+               
+                <input type="button"id="q41" name="question4" type="radio" value="Always"> 
+                <input type="button"id="q42" name="question4" type="radio" value="Often"> 
+                <input type="button"id="q43" name="question4" type="radio" value="Sometimes"> 
+                <input type="button"id="q44" name="question4" type="radio" value="Rarely"> 
+                <input type="button"id="q45" name="question4" type="radio" value="Never"> 
+
+
+
+
+
+
+        </form>
         </div>
-<br><br><br><br>
-       
-    </div>
+        <br><br><br><br>
+
+        </div>
     </section>
 
-    
 
-<footer><!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html-->
-    <div class="progress-example">
-            
+
+    <footer>
+        <!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html-->
+        <div class="progress-example">
+
             <div>
                 <label for="total">Total progress 4 of 5</label>
                 <progress id="total" name="total" max="5" value="4">
@@ -56,11 +70,11 @@
                 </progress>
             </div>
         </div>
-<!--Circles? progress bar with circles?-->
-<a href="test5.html"><img src="IMG/arrow.png" width="10px;"> </a>
+        <!--Circles? progress bar with circles?-->
+        <a href="test5.html"><img src="IMG/arrow.png" width="10px;"> </a>
 
-</footer>
-    
+    </footer>
+
 
 
 
@@ -68,4 +82,5 @@
 </body>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </html>

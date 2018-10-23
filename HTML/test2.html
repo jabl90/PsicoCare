@@ -38,15 +38,18 @@
         </ul>
 
         <div>
-            <label for="question2"><br>What is the second question?<br>Answers ranges from 1 as completely disagree to 5 as the complete agreeing<br><br></label>
-            <div style="border:solid black;">
-                    <input id="q21" name="question2" type="radio"> Mostly agree.
-                    <input id="q22" name="question2" type="radio"> Partly agree.
-                    <input id="q23" name="question2" type="radio"> Neutral.
-                    <input id="q24" name="question2" type="radio"> Partly disagree.
-                    <input id="q25" name="question2" type="radio"> Mostly agree.
+            <form method="POST" action="receptionform.html">
 
-                <!-- CSS to place numeros debajo de las cajas
+                <label for="question2"><br>What is the second question?<br>Answers ranges from 1 as completely disagree
+                    to 5 as the complete agreeing<br><br></label>
+                <div style="border:solid black;">
+                    <input id="q21" name="question2" type="radio"> 1
+                    <input id="q22" name="question2" type="radio"> 2
+                    <input id="q23" name="question2" type="radio"> 3
+                    <input id="q24" name="question2" type="radio"> 4
+                    <input id="q25" name="question2" type="radio"> 5
+            </form>
+            <!-- CSS to place numeros debajo de las cajas
 
 input {
   display: inline-block;
@@ -55,9 +58,9 @@ input {
   top: -3em;
 …-->
 
-            </div>
-            
-            <br><br>
+        </div>
+
+        <br><br>
 
 
         </div>
@@ -71,8 +74,8 @@ input {
 
             <div>
                 <label for="total">Total progress 3 of 5</label>
-                <progress id="total" name="total" max="5" value="3">
-                    3 of 5
+                <progress id="total" name="total" max="5" value="2">
+                    2 of 14
                 </progress>
             </div>
         </div>
