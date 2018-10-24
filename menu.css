@@ -1,0 +1,20 @@
+body{font-family: gotham;
+font-size: 10px; margin: 20px;}
+
+@font-face {
+    font-family: gotham;
+    src: url('esta.otf');
+   unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
+  }
+
+}
+body h1 {
+    background-color: rgb(208, 238, 221);
+    border: 1px;;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+ }
+h2{font-size: 20px}
+
+.row {line-height: 5em !important; }
