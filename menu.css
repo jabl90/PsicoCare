@@ -1,3 +1,13 @@
+#cabecera {margin: 20px;
+    background-color: rgb(208, 238, 221);
+    border: 1px;;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px
+ }
+#boton1 {margin-bottom: 10px; }
+#boton3 {margin-bottom: 10px}
+
 body{font-family: gotham;
 font-size: 10px; margin: 20px;}
 
@@ -6,15 +16,15 @@ font-size: 10px; margin: 20px;}
     src: url('esta.otf');
    unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
   }
-
+  section > div > div >{width: 100%; height: 200px;
+    background: lightpink;
+    border: 1px;
+    display: inline-block;
+    padding: 50px !important;
+    margin: 10px !important;
 }
-body h1 {
-    background-color: rgb(208, 238, 221);
-    border: 1px;;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 30px;
- }
+
+
 h2{font-size: 20px}
 
 .row {line-height: 5em !important; }
