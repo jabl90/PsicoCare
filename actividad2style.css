@@ -12,7 +12,8 @@ h1{margin: 20px;
     color: grey;
     border:white (157, 216, 183);
     border-radius: 15px;
-    text-align: center;}
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;}
 
 @font-face {
     font-family: gotham;
@@ -24,12 +25,12 @@ p{
 
 footer{
     padding: 50px;
+    width: 100%;
 
     }
   .miboton {
-    border:darkorchid solid 1px;; 
+    border: yellow solid 1px;; 
     background-color: white ;
-    width: 200px;
     border-radius: 10px;
     color: black;
     padding: 2px 2px;
@@ -42,7 +43,7 @@ footer{
     }
     
     .miboton:hover{
-    background:darkorchid;
+    background: yellow;
     border: white solid;
     cursor: pointer;
     }
