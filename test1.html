@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test</title>
-    <link rel="" href="">
-   
+    <link rel="stylesheet" href="resultadostyle.css">
+   <link rel="stylesheet" href="teststyle.css">
 
 </head>
 <body>
@@ -15,10 +15,10 @@
 <!--Menu del header-->
 </header>
 <section>
-<h1><u>Starting  Questionary</u></h1><!--Increase font size,place center, colorfull design-->
+<h1 ><u>Starting  Questionary</u></h1><!--Increase font size,place center, colorfull design-->
 
 <br>
-<ul > <!--Unordered HTML List - Choose List Item Marker
+<ul style="list-style-type:  none;"> <!--Unordered HTML List - Choose List Item Marker
 
     The CSS list-style-type property is used to define the style of the list item marker:
     Value 	Description
@@ -27,18 +27,18 @@
     square 	Sets the list item marker to a square
     none 	The list items will not be marked  (https://www.w3schools.com/HTML/html_lists.asp)-->
 
-        <li>1. How do you feel about your future?<br></li>
+        <li style="font-size:28px; text-align:center">1. How do you feel about your future?<br></li>
 
 
 
 </ul>
 
-<div>
+<div style="margin-left:160px;" > 
         
-        <input id="q11" name="question1" type="radio" >I am not particulary discouraged about my future<br>
-        <input id="q12" name="question1" type="radio" >I feel discouraged about the future<br>
-        <input id="q13" name="question1" type="radio" >I feel I have nothing to look forward to<br>
-        <input id="q14" name="question1" type="radio" >I feel the future is hopeless<br><br><br>
+        <input  id="q11" name="question1" type="radio" >I am not particulary discouraged about my future.<br> 
+        <input  id="q12" name="question1" type="radio" >I feel discouraged about the future.<br>
+        <input  id="q13" name="question1" type="radio" >I feel I have nothing to look forward to.<br>
+        <input  id="q14" name="question1" type="radio" >I feel the future is hopeless.<br>
 
 
 
@@ -51,16 +51,17 @@
     <div class="progress-example">
             
             <div>
-                <label for="total">Total progress 1 of 5</label>
+                <label for="total">Total progress 1 out of 5<br></label>
                 <progress id="total" name="total" max="5" value="1">
                     1 of 5
                 </progress>
             </div>
         </div>
 <!--Circles? progress bar with circles?-->
-<a href="test2.html"><img src="IMG/arrow.png" width="10px;"> </a>
+<a href="test2.html"><img src="IMG/arrow.png" width="40px;"> </a>
 
 </footer>
     
 </body>
 </html>
+

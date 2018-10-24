@@ -1,0 +1,14 @@
+
+progress[value] {
+    width: 800px;
+    height: 20px;
+  }
+
+  ul{
+list-style-type:  none;
+  }
+
+  li{
+  font-size:28px; 
+  text-align:center;
+  }
