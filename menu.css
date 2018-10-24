@@ -5,8 +5,13 @@
     text-align: center;
     font-size: 30px
  }
-#boton1 {margin-bottom: 10px; }
-#boton3 {margin-bottom: 10px}
+ a.waves-effect.waves-light.btn-large {
+    width: 100%;
+    height: 100px;
+    line-height: 2em;
+    padding: 30px;
+    padding-left: 20%;
+} 
 
 body{font-family: gotham;
 font-size: 10px; margin: 20px;}

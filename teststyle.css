@@ -15,16 +15,14 @@ list-style-type:  none;
 
   .inputines
   {
+    text-align:center;
+
+    float:center;
     margin-left:420px;
 
-
   }
 
 
-  progress{
-margin-left: 100px;
-
-  }
 
 
   .labelines{
@@ -41,7 +39,6 @@ margin-left: 100px;
 
   .cajaopcions{
 
-    margin-left:300px;
     border-radius:25px;
     padding:25px;
     /*background?*/
@@ -121,4 +118,16 @@ width: 600px;
       font-family: gotham;
       src: url('esta.otf');
      unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
+    }
+
+
+    h1{
+      float: center;
+    }
+
+    #divdeinput{
+
+
+
+
     }

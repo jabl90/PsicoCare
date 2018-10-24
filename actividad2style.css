@@ -1,0 +1,48 @@
+body{font-family: gotham;
+    font-style: normal;
+font-size: 20;
+color: rgb(2, 2, 37);
+background:white;
+padding: 15px;
+text-align: justify;
+}
+
+h1{margin: 20px;
+    background-color:white;
+    color: grey;
+    border:white (157, 216, 183);
+    border-radius: 15px;
+    text-align: center;}
+
+@font-face {
+    font-family: gotham;
+    src: url('esta.otf');
+   unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
+  }
+p{
+    color: grey; font-style: inherit;}
+
+footer{
+    padding: 50px;
+
+    }
+  .miboton {
+    border:darkorchid solid 1px;; 
+    background-color: white ;
+    width: 200px;
+    border-radius: 10px;
+    color: black;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    float: 20%;
+    font-size: 2em;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    }
+    
+    .miboton:hover{
+    background:darkorchid;
+    border: white solid;
+    cursor: pointer;
+    }
