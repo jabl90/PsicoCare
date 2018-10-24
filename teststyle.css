@@ -12,3 +12,113 @@ list-style-type:  none;
   font-size:28px; 
   text-align:center;
   }
+
+  .inputines
+  {
+    margin-left:420px;
+
+
+  }
+
+
+  progress{
+margin-left: 100px;
+
+  }
+
+
+  .labelines{
+
+    margin-left: 200px;
+
+  }
+
+  .ida{
+
+
+    width: 40px;
+  }
+
+  .cajaopcions{
+
+    margin-left:300px;
+    border-radius:25px;
+    padding:25px;
+    /*background?*/
+  }
+
+  .inputina1
+{
+margin-left: 60px;
+}
+
+.inputina2
+{
+margin-left: 90px;
+}
+.inputina3
+{
+margin-left: 92px;
+}
+.inputina4
+{
+margin-left: 95px;
+}
+.inputina5
+{
+margin-left: 100px;
+}
+
+
+.vuelta{
+
+  width: 40px;
+  -webkit-transform: rotate(180deg);
+  
+
+
+}
+
+
+.botoninput
+  {
+    border-radius: 25px;
+    background-color: rgb(219, 130, 22);
+    padding: 5px;
+    color: rgb(53, 45, 33);
+    font-weight: bold;
+  }
+
+ .slidebar{
+margin-left:250px;
+width: 600px;
+
+ }
+
+ button{
+
+
+ }
+
+
+ .labelinesconflicto
+ {
+
+  color:black; 
+  font-family:gotham;
+  font-size:15px;
+  margin-left: 320px;
+  margin-bottom: -15px;
+
+ }
+ #finalprogress{
+  margin-left: 40px;
+  
+    }
+
+
+    @font-face {
+      font-family: gotham;
+      src: url('esta.otf');
+     unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
+    }

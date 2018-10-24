@@ -1,0 +1,38 @@
+body{font-family: gotham;
+    font-style: normal;
+font-size: 20px;
+color: rgb(2, 2, 37);
+background:white; 
+padding: 50px;
+text-align: justify;}
+
+@font-face {
+    font-family: gotham;
+    src: url('esta.otf');
+   unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
+  }
+
+
+h1{margin: 20px;
+    background-color: rgb(208, 238, 221);
+    border: 1px;;
+    border-radius: 15px;
+    text-align: center
+}
+
+section{background: white; 
+border: color lightcoral solid 1px;
+display: block;
+width: 1000px; height: 1000px;
+margin: 50px;
+
+}
+
+div > div >a{width: 500px; height: 258px;
+        background: lightpink;
+        border: 1px;
+       padding: 200px;
+      margin: 100px;
+  border-radius: 20px;
+font-size: 2em;}
+

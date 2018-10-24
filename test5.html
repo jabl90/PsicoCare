@@ -8,6 +8,8 @@
     <title>Test</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="resultadostyle.css">
+    <link rel="stylesheet" href="teststyle.css">
 </head>
 
 <body>
@@ -23,18 +25,25 @@
                       circle 	Sets the list item marker to a circle
                       square 	Sets the list item marker to a square
                       none 	The list items will not be marked  (https://www.w3schools.com/HTML/html_lists.asp)-->
-                  
-                          <li>5. In the last two weeks I have been worrying too much about different things 
-                    </li>
+                      <li>5. How do you feel about the next statement?<br></li>
+
+                    
                   
                   
                   
                   </ul>
 
+
+
+
         <div>
-            <div><form action="#">
-                    <p class="range-field">
-                    <input type="range" id="test5" min="1" max="5" />
+                <label for="question5"><p style="text-align:center;font-size:20px;color: black">In the last two weeks I have been worrying too much about different things  <br></p></label>
+                
+            <div><form method="POST" action="receptionform.html">
+
+                    
+                    <p class="slidebar" class="range-field" >
+                    <input  type="range" id="test5" min="1" max="5" />
                     </p>
                 </form>
             </div>
@@ -42,24 +51,24 @@
           
         </section>
 
-    
-
 
     <footer><!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html-->
+        <a href="test4.html"><img class="vuelta" src="IMG/arrow.png"></a>
+
         <div class="progress-example">
                 
                 <div>
-                    <label for="total">Total progress 5 of 5</label>    
+                    <label for="total"><p class="labelinesconflicto" >Total progress 5 of 5</p><br></label>    
                     <!--Ajustar stilo de label con CSS-->
 
-                    <progress id="total" name="total" max="5" value="5">
+                    <progress id="finalprogress" id="total" name="total" max="5" value="5">
                         5 of 5
                     </progress>
                 </div>
             </div>
     <!--Lleva a resultados.html seguro?-->
-    <a href="resultados.html"><img src="IMG/arrow.png" width="10px;"> </a>
-    
+    <a href="resultados.html"  class="waves-effect waves-light btn-large">Submit</a>
+
     </footer>
 
 
