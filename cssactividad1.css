@@ -1,19 +1,21 @@
 body{font-family: gotham;
+    font-style: normal;
+font-size: 20;
+color: rgb(2, 2, 37);
+background:white;
 padding: 15px;
-text-align: justify;}
-
-@font-face {
-    font-family: gotham;
-    src: url('./esta.otf');
-   unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
-  }
-  header > nav > div > a {background-image: url(./logo\ ejemplo1.png);
-    padding-left: 100px;
-    background-position: left;
-    background-size: 100px;
-    background-repeat: no-repeat;
-    border-radius: 2px;
-    margin-left: 200px;}
+text-align: justify;
+}
+#logo {
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 70px;
+    margin-top: 13px;
+    padding-bottom: 1px;
+}
+#menuderecha {
+    font-size: 50px;
+    font-family: "gotham";}
 
 h1{margin: 20px;
     background-color:white;
@@ -23,19 +25,20 @@ h1{margin: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;}
 
-audio {
-    display: inline-block;
-    width: 100%;
-    padding: 50
-    px 20px;
-    }
+@font-face {
+    font-family: gotham;
+    src: url('esta.otf');
+   unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
+  }
 p{
-    display: inline-block;
-    padding: 20px;
-    color: gray;
-}
+    color: grey; font-style: inherit;}
 
-.miboton {
+footer{
+    padding: 50px;
+    width: 100%;
+
+    }
+  .miboton {
     border: yellow solid 1px;; 
     background-color: white ;
     border-radius: 10px;
