@@ -1,3 +1,14 @@
+#logo {
+    display: inline-block;
+    margin-bottom: 0px;
+    width: 70px;
+    margin-top: 13px;
+    padding-bottom: 1px;
+}
+#menuderecha {
+    font-size: 50px;
+    font-family: "gotham";    
+}
 #cabecera {margin: 20px;
     background-color: rgb(208, 238, 221);
     border: 1px;;
