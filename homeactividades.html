@@ -5,48 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="homeactivitiesstyle.css">
+    <link rel="stylesheet" href="./homeactivitiesstyle.css">
     <title>Actvidades</title>
 </head>
 
-<body>
+<body>    
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"><i class="material-icons">PsicoCare</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html"><i class="material-icons">Home</i></a></li>
-                    <li><a href="badges.html"><i class="material-icons">Main Profile</i></a></li>
-                    <li><a href="collapsible.html"><i class="material-icons">Results</i></a></li>
-                    <li><a href="mobile.html"><i class="material-icons">Activities</i></a></li>
+                <a href="./menu.html" class="brand-logo left">PsicoCare <img src="./logo photoshopeado2.png" alt="Logo" id="logo"></a> 
+                <ul id="menuderecha" class="right hide-on-med-and-down">
+                    <li><a href="./menu.html">Home</a></li>
+                    <li><a href="./profile.html">Main Profile</a></li>
+                    <li><a href="./resultados.html">Results</a></li>
+                    <li><a href="./homeactividades.html">Activities</a></li>
                 </ul>
+
             </div>
         </nav>
-        <h1>ACTIVITIES</h1>
-        <section>
-            <div class="row">
-                <div class="col s6">
-                    <a class="waves-effect waves-light btn-large" href="actividad3.html">Keep Calm</a>
+    
+    <div>
+        <!-- Aqui va el navbar-->
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="./backgroun menu.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="./gato.png"></a>
+                    <a href="#name"><span class="white-text name">Klara</span></a>
+                    <a href="#email"><span class="white-text email">ansiedadatope@gmail.com</span></a>
                 </div>
-                <div class="col s6">
-                        <a class="waves-effect waves-light btn-large" href="actividad4.html">Planning your goals</a>
-        
+            </li>
+            <li><a href="#!">MENU </a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="./profile.html">PROFILE</a></li>
+            <li><a class="waves-effect" href="#!">PROGRESO</a></li>
+            <li><a class="waves-effect" href="./homeactividades.html">ACTIVIDADES</a></li>
+            <li><a class="waves-effect" href="./config.html">OPTIONS</a></li>
+            <li><a class="waves-effect" href="./Aboutus.html">ABOUT</a></li>
+            <li><a class="waves-effect" href="./welcome.html">LOG OUT</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </header>
+    
+        <h1 style="font-size:8vw">ACTIVITIES</h1>
+        <section class="container">
+            <div class="row">
+                <div class="grid-example col s12 m6"><a class="waves-effect waves-light btn-large" href="actividad3.html"><span
+                            class="flow-text"></span>Keep Calm</a>
+                </div>
+                <div class="grid-example col s12 m6"><a class="waves-effect waves-light btn-large" href="actividad4.html"><span
+                            class="flow-text"></span>Planning your goals</a>
                 </div>
 
-                <div class="row">
-                    <div class="col s6">
-                            <a class="waves-effect waves-light btn-large" href="actividad1.html">Your relationships</a>
-                    </div>
-                    <div class="col s6">
-                            <a class="waves-effect waves-light btn-large" href="actividad2.html">Activate your mood</a>
-                    </div>
+            </div>
+
+            <div class="row">
+                <div class="grid-example col s12 m6"><a class="waves-effect waves-light btn-large" href="actividad1.html"><span
+                            class="flow-text"></span>Your relationships</a>
                 </div>
+                <div class="grid-example col s12 m6"><a class="waves-effect waves-light btn-large" href="actividad2.html"><span
+                            class="flow-text"></span> Mood</a>
+                </div>
+            </div>
 
         </section>
-    </header>
+    
 
 </body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./init.js"></script>
 
 </html>
