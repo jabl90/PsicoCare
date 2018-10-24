@@ -39,25 +39,41 @@
         </ul>
 
         <div>
-            <label for="question2" style=><br><p>I feel confident about my ability to handle my personal problems</p> <br></label>
-            <div style="border:solid black;">
-                    <input id="q21" name="question2" type="radio"> Mostly agree.
-                    <input id="q22" name="question2" type="radio"> Partly agree.
-                    <input id="q23" name="question2" type="radio"> Neutral.
-                    <input id="q24" name="question2" type="radio"> Partly disagree.
-                    <input id="q25" name="question2" type="radio"> Mostly agree.
+            <label for="question2" style=><br>
+                <p style="text-align:center;font-size:20px;">I feel confident about my ability to handle my personal
+                    problems</p> <br>
+            </label>
 
-                <!-- CSS to place numeros debajo de las cajas
 
-input {
-  display: inline-block;
-  width: 6em;
-  position: relative;
-  top: -3em;
-…-->
+            <div class="cajaopcions" style="border:solid black">
+
+                <table>
+                    <tr>
+                        <td>&nbsp;Mostly agree&nbsp;</td>
+                        <td>&nbsp;Partly agree&nbsp;</td>
+                        <td>&nbsp;Neutral&nbsp;</td>
+                        <td>&nbsp;Partly disagree&nbsp;</td>
+                        <td>&nbsp;Mostly disagree&nbsp;</td>
+
+                    </tr>
+                    <tr> <input class="inputina1" id="q21" name="question2" type="radio" >
+                    </tr>
+                    <tr> <input class="inputina2" id="q22" name="question2" type="radio"> </tr>
+                    <tr> <input class="inputina3" id="q23" name="question2" type="radio"> </tr>
+                    <tr> <input class="inputina4" id="q24" name="question2" type="radio"> </tr>
+                    <tr> <input class="inputina5" id="q25" name="question2" type="radio"> </tr>
+
+
+
+
+                </table>
+
+
+              
+
 
             </div>
-            
+
             <br><br>
 
 
@@ -67,18 +83,20 @@ input {
 
 
     <footer>
+
+        <a  href="test1.html"><img class="vuelta" src="IMG/arrow.png"></a>
         <!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html-->
         <div class="progress-example">
 
             <div>
-                <label for="total">Total progress 2 of 5</label>
+                <label class="labelines" for="total">Total progress 2 of 5<br></label>
                 <progress id="total" name="total" max="5" value="2">
-                   2 of 5
+                    2 of 5
                 </progress>
             </div>
         </div>
         <!--Circles? progress bar with circles?-->
-        <a href="test3.html"><img src="IMG/arrow.png" width="10px;"> </a>
+        <a  href="test3.html"><img class="ida" src="IMG/arrow.png"> </a>
 
     </footer>
 
