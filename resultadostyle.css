@@ -5,12 +5,9 @@ color: rgb(2, 2, 37);
 background:white; 
 padding: 15px;
 text-align: justify;
-<<<<<<< HEAD
 font-weight: 300;
-=======
->>>>>>> 884f84e09448e8328d85a7071c5e54f02da587c4
-
 }
+
 @font-face {
     font-family: gotham;
     src: url('esta.otf');
@@ -19,7 +16,7 @@ font-weight: 300;
 
 header{margin: 20px;
 background-color: rgb(208, 238, 221);
-border:white);
+border:white;
 border-radius: 15px;}
 
 h1{text-align: center;}
