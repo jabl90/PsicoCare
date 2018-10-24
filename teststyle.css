@@ -38,9 +38,10 @@ list-style-type:  none;
   }
 
   .cajaopcions{
-
+    border: 5px solid rgb(165, 155, 155);
     border-radius:25px;
     padding:25px;
+    width: 600px;
     /*background?*/
   }
 
@@ -86,16 +87,7 @@ margin-left: 100px;
     font-weight: bold;
   }
 
- .slidebar{
-margin-left:250px;
-width: 600px;
 
- }
-
- button{
-
-
- }
 
 
  .labelinesconflicto
@@ -120,14 +112,3 @@ width: 600px;
      unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
     }
 
-
-    h1{
-      float: center;
-    }
-
-    #divdeinput{
-
-
-
-
-    }
