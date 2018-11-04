@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test</title>
-    <link rel="stylesheet" href="resultadostyle.css">
-    <link rel="stylesheet" href="teststyle.css">
+    <link rel="stylesheet" href="CSS/teststyle.css">
+
 </head>
 
 <body>
-
     <header>
-        <!--Menu del header-->
+        <nav class="nav-wrapper blue lighten-3">
+            <div style="position: relative; display: inline-block;" class="brand-logo">PsicoCare <img src="./IMG/logo photoshopeado2.png"
+                    alt="Logo" id="logo"></div>
+
+
+            <!--Le falta el efecto sombra y quizas reposicionar logo-->
+
+
+        </nav>
+
+
     </header>
     <section>
         <h1><u>Question 4 out of 5.</u></h1>
@@ -41,18 +50,11 @@
             </label>
 
 
-
-
-
-
-
             <table style="align-content: center; margin:auto; font-size:19px;">
 
                 <tr>
 
-                    <td>
-                        <p>&nbsp;&nbsp;</p>
-                    </td>
+                    
                     <td> <input class="botoninput" type="button" id="q41" name="question4" type="radio" value="Very often">
                     </td>
                     <td> <input class="botoninput" type="button" id="q42" name="question4" type="radio" value="Fairly often">
@@ -89,24 +91,26 @@
     </section>
 
     <footer>
-            <!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html style="border:5px solid black; align-content: center;width: 400px;-->
-    
-    
-            <table style="align-content: center; margin:auto;">
-    
-                    <tr>
-                        <td><a  href="test3.html"><img class="vuelta" src="IMG/arrow.png"></a></td>
-                        <td><label for="total"><p>&nbsp;&nbsp;Total progress 4 out of 5</p></td>
-                        <td> 
-                                <div class="progress-example; text-align:left;">
-    
-                                        <progress id="total" name="total" max="5" value="4">
-                                            4 of 5
-                                        </progress> </div>
-                            </td>
-                            <td> <a  href="test5.html"><img class="ida" src="IMG/arrow.png"> </a></td>
-                    </tr>
-</table>
+        <!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html style="border:5px solid black; align-content: center;width: 400px;-->
+
+
+        <table style="align-content: center; margin:auto;">
+
+            <tr>
+                <td><a href="test3.html"><img class="vuelta" src="IMG/arrow.png"></a></td>
+                <td><label for="total">
+                        <p>&nbsp;&nbsp;Total progress 4 out of 5</p>
+                </td>
+                <td>
+                    <div class="progress-example; text-align:left;">
+
+                        <progress id="total" name="total" max="5" value="4">
+                            4 of 5
+                        </progress> </div>
+                </td>
+                <td> <a href="test5.html"><img class="ida" src="IMG/arrow.png"> </a></td>
+            </tr>
+        </table>
 
 
 
@@ -118,4 +122,6 @@
 
 </body>
 <!-- Compiled and minified JavaScript -->
-<script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script> </html>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+
+</html>

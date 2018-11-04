@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test</title>
-    <link rel="stylesheet" href="resultadostyle.css">
-    <link rel="stylesheet" href="teststyle.css">
-
+    <link rel="stylesheet" href="CSS/teststyle.css">
 </head>
 
 <body>
+    <header> 
+        <nav  class="nav-wrapper blue lighten-3">
 
-            <header>
-                    
-                        </header>
-    <section>
+                    <div  style="position: relative; display: inline-block;" class="brand-logo">PsicoCare   <img  src="./IMG/logo photoshopeado2.png" alt="Logo" id="logo"></div> 
+                 
+            
+                <!--Le falta el efecto sombra y quizas reposicionar logo-->
+
+        
+        </nav>
+
+      
+    </header>
+    <section >
         <h1><u>Starting Questionary</u></h1>
         <!--Increase font size,place center, colorfull design-->
 
@@ -38,9 +45,7 @@
         </ul>
 
 
-        <div>
-
-            <table style="align-content: center; margin:auto;">
+            <table  style="align-content: center; margin:auto;">
 
                     <tr>
                         <td><input id="q11" name="question1" type="radio"></td>
@@ -67,29 +72,43 @@
     </section>
 
 
-    <footer>
+    <footer style="align-content: center; margin:auto;">
         <!--Progress Bar   examples of progress bars https://materializecss.com/preloader.html style="border:5px solid black; align-content: center;width: 400px;-->
+<div>       </div>
+<div>       </div>
+<div>       </div>
+        <label id="res2" for="total">  Total progress 1 out of 5 </label>
+                <div class="progress-example; text-align:left;">
 
+                        <progress id="total" name="total" max="5" value="1">
+                            1 of 5
+                        </progress>
+                     </div>
+                     <a href="test2.html"  id="res1"><img class="ida" src="IMG/arrow.png"> </a>
 
-        <table style="align-content: center; margin:auto;">
+        
+        <!-- <table style="align-content: center; margin:auto;">
 
                 <tr>
-                    <td><label for="total"> Total progress 1 out of 5</td>
+                    <td>                        <label for="total"> Total progress 1 out of 5
+                        </td>
                     <td> 
                         <div class="progress-example; text-align:left;">
 
                             <progress id="total" name="total" max="5" value="1">
                                 1 of 5
-                            </progress> </div>
+                            </progress>
+                         </div>
                         </td>
-                        <td>        <a href="test2.html"><img class="ida" src="IMG/arrow.png"> </a>  </td>
+                        <td>        <a href="test2.html"  id="res1"><img class="ida" src="IMG/arrow.png"> </a>  </td>
                 </tr>
-        <!--Circles? progress bar with circles?-->
+        Circles? progress bar with circles?
 
 
 
-            </table>
-
+    </table>
+-->
+       
             
 
               
