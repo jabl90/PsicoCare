@@ -51,7 +51,7 @@ margin: 0;
 }
 @font-face {
     font-family: gotham;
-    src: url('esta.otf');
+    src: url('/FONTS/esta.otf');
    unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
   }
  
@@ -75,3 +75,5 @@ h2{border: white solid 5px;
     width: 250px;
     
     }
+
+    
