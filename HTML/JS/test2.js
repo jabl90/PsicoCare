@@ -1,24 +1,65 @@
+console.log("Esto es el script");
+
+
+
 document.getElementById('res1').onclick = (function (evnt) {
-    evnt.preventDefault();
+let questionnumber = document.getElementById("total").value;
+
+    // console.log(evnt);
+   // evnt.preventDefault();
+
+   // document.querySelectorAll('.error').forEach(elem => {
+     //   elem.classList.add('esconder');
+    //});
 
     let formValid = document.getElementById('loginform');
+   
 
+    var radios = document.getElementsByName('question');
 
-    var radios = document.getElementsByName('question1');
-
-    for (var i = 0, length = radios.length; i < length; i++) {
-        if (radios[i].checked) {
-            // do whatever you want with the checked radio
-            question2 = (radios[i].value);
-
-            // only one radio can be logically checked, don't check the rest
-            break;
-        }
+    for (var i = 0, length = radios.length; i < length; i++)
+    {
+     if (radios[i].checked)
+     {
+      // do whatever you want with the checked radio
+      answer = (radios[i].value);
+    
+      // only one radio can be logically checked, don't check the rest
+      break;
+     }
     }
 
     let respuestastest = [];
-    
-    respuestastest[0]=question2;
+
+    respuestastest[0] = answer;
 
     window.localStorage.setItem('respuestasTest', JSON.stringify(respuestastest));
-    console.log(question2);
+    console.log(answer);
+
+    console.log(answer);
+    var questionid =  "question"+questionnumber; 
+console.log(questionid); 
+
+    if (formValid) {
+        //ENVIAR
+        $.ajax({
+            method: "POST",
+            url: "http://www.mocky.io/v2/5bd9731d2f00005e0006d11d",
+           
+            //url: "http:www.mocky.io/v2/5be0156b3200006100649400", //url false//
+            data: questionid,
+        }).done(function () {
+            console.log("La respuesta de "+ questionid+ " es "+answer);
+
+            //if (data.result) {
+              //  window.location.href = 'test2.html';
+            //} else {
+                //mensaje de error
+              //  document.getElementById('mensaje').classList.remove('esconder');
+            //}
+        });
+
+    } 
+
+
+});
