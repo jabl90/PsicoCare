@@ -31,7 +31,6 @@
     </header>
 
     <body>
-        <form method="POST" action="receptionform.html">
 
             <h1>Work out your goals!</h1>
             <p>
@@ -56,12 +55,18 @@
                         <tr>
                             <td>Urgent</td>
                             <td>
+                            <form id="textform" >
+
                                 <div><label for="textito"></label>
-                                    <textarea name="textito" id="cuentame" required maxlength="500"> </textarea></th>
+                                    
+                                    <textarea name="textito" id="cuentame1" rows="4" cols="50" name="comment" form="textform" required maxlength="500">
+                                            Enter text here...</textarea>
+
+                                </th>
                             </td>
                             <td>
-                                <div><label for="textito"></label>
-                                    <textarea name="textito" id="cuentame" required maxlength="500"> </textarea></th>
+                                <div>  <textarea name="textito" id="cuentame1" rows="4" cols="50" name="comment" form="textform" required maxlength="500">
+                                        Enter text here...</textarea> </textarea></th>
                             </td>
                         </tr>
                     </tbody>
@@ -69,16 +74,18 @@
                         <tr>
                             <td>Not urgent</td>
                             <td>
-                                <div><label for="textito"></label>
-                                    <textarea name="textito" id="cuentame" required maxlength="500"> </textarea></th>
+                                <div>  <textarea name="textito" id="cuentame1" rows="4" cols="50" name="comment" form="textform" required maxlength="500">
+                                        Enter text here...</textarea> </textarea></th>
                             </td>
                             <td>
-                                <div><label for="textito"></label>
-                                    <textarea name="textito" id="cuentame" required maxlength="500"> </textarea></th>
+                                <div>  <textarea name="textito" id="cuentame1" rows="4" cols="50" name="comment" form="textform" required maxlength="500">
+                                        Enter text here...</textarea> </textarea></th>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
+                <input type="button" id="submitboton" value="Submit your answer"> 
+
             </div>
 
             <footer>
@@ -89,5 +96,7 @@
         </form>
     </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="./JS/actividad2.js"></script>
 
 </html>
