@@ -1,4 +1,23 @@
-console.log("Esto es el script");
+console.log("Esto es el script de botontest");
+q41=document.getElementById("q41");
+console.log(q41);
+
+function botofuncion() {
+    
+    let answer2 = document.getElementById();
+    console.log(answer2.value);
+  }
+
+//let process= document.getElementsById('q41');
+//console.log(process);
+
+
+
+
+
+
+    
+
 
 
 
@@ -22,7 +41,7 @@ let questionnumber = document.getElementById("total").value;
      if (radios[i].checked)
      {
       // do whatever you want with the checked radio
-      answer = (radios[i].value);
+     // answer = (radios[i].value);
     
       // only one radio can be logically checked, don't check the rest
       break;
