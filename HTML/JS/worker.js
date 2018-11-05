@@ -1,9 +1,8 @@
-onmessage = function(mess){
-    let nums=mess.data;
-    console.log(nums);
+onmessage = function(resultadofinal){
+    returns true;
+    console.log(/*aqui iria pagina web resultados?*/);
 
-    let result = nums.reduce((ant,act)=>{
-        return ant +=act;
+   
     })
     this.postMessage(result);
 } 
