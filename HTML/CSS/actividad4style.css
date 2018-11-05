@@ -3,20 +3,19 @@ body{font-family: gotham;
 font-size: 20;
 color: rgb(2, 2, 37);
 background:white;
-padding: 15px;
 text-align: justify;
 
 }
 
 h1{margin: 20px;
-    background-color: rgb(157, 216, 183);
+    background-color: #90CAF9;
     border: rgb(157, 216, 183);
     border-radius: 15px;
 text-align: center;}
 
 @font-face {
     font-family: gotham;
-    src: url('esta.otf');
+    src: url('./FONTS/esta.otf');
    unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
   }
 

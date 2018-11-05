@@ -52,14 +52,15 @@
                 agreeing.<br> <br></p>
         </label>
 
-            <form action="#">
+        <form method="POST" id="loginform" >
+
 
                 <table style="align-content: center; margin:auto; font-size:19px; align-items: center;width: 500px;">
                     <tr>
                         <td>
-                            <form>
+                            
                                 <p style="margin:auto;" class="range-field">
-                                    <input type="range" id="test5" min="0" max="5" />
+                                    <input name="question" type="range" id="test5" min="0" max="5" />
                                 </p>
                             </form>
                             </p>
@@ -77,7 +78,6 @@
 
 
 
-            </form>
 
 
 
@@ -97,14 +97,16 @@
                             2 of 5
                         </progress> </div>
                     </td>
-                    <td> <a  href="resultados.html"><img  src="IMG/submit.png"> </a></td>
+                    <td> <a  id="res1" href="#"><img  src="IMG/submit.png"> </a></td>
             </tr>
 </table>
-
+<!--resultados.html-->
 
 </body>
 
 <!-- Compiled and minified JavaScript -->
+<script src="JS/jquery-3.3.1.min.js"></script>
+<script src="JS/rangetest.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </html>
