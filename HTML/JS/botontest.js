@@ -1,12 +1,24 @@
 console.log("Esto es el script de botontest");
+q41=document.getElementById("q41");
+console.log(q41);
 
-document.getElementsByName('question').onclick= function botofuncion (){
+function botofuncion() {
     
-     let answer2 =  document.getElementsByName('question');
-    
-console.log(answer2);
+    let answer2 = document.getElementById();
+    console.log(answer2.value);
+  }
 
-}
+//let process= document.getElementsById('q41');
+//console.log(process);
+
+
+
+
+
+
+    
+
+
 
 
 document.getElementById('res1').onclick = (function (evnt) {
