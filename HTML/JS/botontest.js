@@ -1,55 +1,20 @@
-console.log("Esto es el script de botontest");
-q41=document.getElementById("q41");
-console.log(q41);
-
-function botofuncion() {
-    
-    let answer2 = document.getElementById();
-    console.log(answer2.value);
-  }
-
-//let process= document.getElementsById('q41');
-//console.log(process);
 
 
+function botofuncion(clicked_id) {
 
+ pregunta=document.getElementById(clicked_id);
+ numerorespuesta=(clicked_id);
 
-
-
-    
-
-
+ }
 
 
 document.getElementById('res1').onclick = (function (evnt) {
 let questionnumber = document.getElementById("total").value;
-
-    // console.log(evnt);
-   // evnt.preventDefault();
-
-   // document.querySelectorAll('.error').forEach(elem => {
-     //   elem.classList.add('esconder');
-    //});
-
-    let formValid = document.getElementById('loginform');
    
+    let formValid = document.getElementById('loginform');
 
-    var radios = document.getElementsByName('question');
+    answer=pregunta.value;
 
-    for (var i = 0, length = radios.length; i < length; i++)
-    {
-     if (radios[i].checked)
-     {
-      // do whatever you want with the checked radio
-     // answer = (radios[i].value);
-    
-      // only one radio can be logically checked, don't check the rest
-      break;
-     }
-    }
-
-
-    console.log(answer);
     var questionid =  "question"+questionnumber; 
 console.log(questionid); 
 
@@ -62,7 +27,7 @@ console.log(questionid);
             //url: "http:www.mocky.io/v2/5be0156b3200006100649400", //url false//
             data: questionid,
         }).done(function () {
-            console.log("La respuesta de "+ questionid+ " es "+answer);
+            console.log("La respuesta de la "+ questionid+ " es la respuesta  "+numerorespuesta+ " : " +answer);
 
             //if (data.result) {
               //  window.location.href = 'test2.html';

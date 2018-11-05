@@ -1,4 +1,3 @@
-console.log('hola');
 document.getElementById('register').onclick = (function(event){
 
     event.preventDefault();
@@ -7,8 +6,9 @@ document.getElementById('register').onclick = (function(event){
     });
 
 let formValid = document.getElementById('loginform').checkValidity();
+let passEqs = (document.getElementById('password').value == document.getElementById('confirm').value);
 
-if (formValid) {
+if (formValid && passEqs) {
     //enviar
     $.ajax({
         method: "POST",
@@ -26,10 +26,38 @@ if (formValid) {
         if (data.result) {
             window.location.href = 'menu.html';
         } else {
-            document.getElementById('mensaje').classList.remove('hide'); //mensaje de error
+            document.getElementById('passwordnomatch').classList.remove('hide'); //mensaje de error
         }
     });
 
+} else {
+
+    if (!document.getElementById('name').checkValidity()) {
+        document.getElementById('errorname').classList.remove('hide');
+    }
+    if (!document.getElementById('email').checkValidity()) {
+        document.getElementById('erroremail').classList.remove('hide');
+    }
+
+    if (!document.getElementById('username').checkValidity()) {
+        document.getElementById('errorusuario').classList.remove('hide');
+    }
+    if (!document.getElementById('password').checkValidity()) {
+        document.getElementById('errorpassword').classList.remove('hide');
+    }
+
+    if(!passEqs){
+
+        document.getElementById('passwordnomatch').classList.remove('hide');
+
+    }
+
+   /* if('password'!='confirm'){
+
+        document.getElementById('passwordnomatch').checkValidity();
+    }
+   */
 }
+
 
 });
