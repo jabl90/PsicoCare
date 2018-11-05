@@ -5,35 +5,12 @@ console.log("Esto es el script");
 document.getElementById('res1').onclick = (function (evnt) {
 let questionnumber = document.getElementById("total").value;
 
-    // console.log(evnt);
-   // evnt.preventDefault();
-
-   // document.querySelectorAll('.error').forEach(elem => {
-     //   elem.classList.add('esconder');
-    //});
-
-    let formValid = document.getElementById('loginform');
+let formValid = document.getElementById('loginform');
    
-
-    var radios = document.getElementsByName('question');
-
-    for (var i = 0, length = radios.length; i < length; i++)
-    {
-     if (radios[i].checked)
-     {
-      // do whatever you want with the checked radio
-      answer = (radios[i].value);
-    
-      // only one radio can be logically checked, don't check the rest
-      break;
-     }
-    }
+var answer = $("#test5").val();
 
 
-    console.log(answer);
-    
-    var questionid =  "question"+questionnumber; 
-console.log(questionid); 
+var questionid =  "question"+questionnumber; 
 
     if (formValid) {
         //ENVIAR
