@@ -15,8 +15,12 @@ window.onload = function () {
               },
         data: [{
             type: "line",
-            data: [
-        
+            dataPoints: [
+                {y: guardarResp (1) 
+
+            
+            },
+
             ]
            
         }]
@@ -25,17 +29,19 @@ window.onload = function () {
 
 }
 
-localStorage.setItem("respuestasTest");
-
-for (let index = 0; index < localStorage.length; index++) {
-    const key = localStorage.key[index];
-
-    if key.indexOf("respuestasTest") === 0 {
-        let elem = localStorage.getItem(key);
-        console.log(elem)
 
 
 
-    }
+// localStorage.setItem("respuestasTest");
+
+// for (let index = 0; index < localStorage.length; index++) {
+//     const key = localStorage.key[index];
+
+//     if key.indexOf("respuestasTest") === 0 {
+//         let elem = localStorage.getItem(key);
+//         console.log(elem)
+
+
+
     
-}
+    
