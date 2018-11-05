@@ -1,9 +1,13 @@
+
+   
+
 document.getElementById('submitboton').onclick = (function (evnt) {
     
  let formValid = document.getElementById('textform');
  textarray=[];      
  for (let index = 0; index < formValid.length-1; index++) {
 textarray[index]= formValid[index].value;
+
 
  }
           
@@ -30,3 +34,6 @@ textarray[index]= formValid[index].value;
     
     
     });
+
+
+    
