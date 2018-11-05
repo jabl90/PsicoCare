@@ -1,5 +1,12 @@
-console.log("Esto es el script");
+console.log("Esto es el script de botontest");
 
+document.getElementsByName('question').onclick= function botofuncion (){
+    
+     let answer2 =  document.getElementsByName('question');
+    
+console.log(answer2);
+
+}
 
 
 document.getElementById('res1').onclick = (function (evnt) {
@@ -22,7 +29,7 @@ let questionnumber = document.getElementById("total").value;
      if (radios[i].checked)
      {
       // do whatever you want with the checked radio
-      answer = (radios[i].value);
+     // answer = (radios[i].value);
     
       // only one radio can be logically checked, don't check the rest
       break;
