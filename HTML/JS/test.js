@@ -29,7 +29,10 @@ let questionnumber = document.getElementById("total").value;
      }
     }
 
-  
+
+    console.log(answer);
+    
+    var questionid =  "question"+questionnumber; 
 console.log(questionid); 
 
     if (formValid) {

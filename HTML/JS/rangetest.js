@@ -1,22 +1,16 @@
+console.log("Esto es el script");
 
-
-function botofuncion(clicked_id) {
-
- pregunta=document.getElementById(clicked_id);
- numerorespuesta=(clicked_id);
-
- }
 
 
 document.getElementById('res1').onclick = (function (evnt) {
 let questionnumber = document.getElementById("total").value;
+
+let formValid = document.getElementById('loginform');
    
-    let formValid = document.getElementById('loginform');
+var answer = $("#test5").val();
 
-    answer=pregunta.value;
 
-    var questionid =  "question"+questionnumber; 
-console.log(questionid); 
+var questionid =  "question"+questionnumber; 
 
     if (formValid) {
         //ENVIAR
@@ -27,7 +21,7 @@ console.log(questionid);
             //url: "http:www.mocky.io/v2/5be0156b3200006100649400", //url false//
             data: questionid,
         }).done(function () {
-            console.log("La respuesta de la "+ questionid+ " es la respuesta  "+numerorespuesta+ " : " +answer);
+            console.log("La respuesta de "+ questionid+ " es "+answer);
 
             //if (data.result) {
               //  window.location.href = 'test2.html';
