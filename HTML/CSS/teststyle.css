@@ -1,6 +1,3 @@
-
-
-
   ul{
 list-style-type:  none;
   }
@@ -16,21 +13,14 @@ list-style-type:  none;
 
     float:center;
     margin-left:420px;
-
   }
-
-
-
 
   .labelines{
 
     margin-left: 200px;
-
   }
 
   .ida{
-
-
     width: 40px;
   }
 
@@ -221,6 +211,7 @@ body {
   text-align: justify;
   margin: 0px;;
   font-weight: 300;
+  padding:20;
 
 
  }
@@ -266,10 +257,7 @@ ul{list-style-type:  color darkblue;}
 div{ margin: 30px;
   display: inline-block; 
 }
-progress[value] {
-  width: 800px;
-  height: 20px;
-}
+
 
 
  
@@ -279,9 +267,62 @@ display: inline-block; }
 
 /* Hay que llenar tantos media como dispositivos a los que se quiera dar servicio. Atender al punto de corte de resolucion de cada dispositivo para ajustar max-width: en @media*/
 
+@media only screen and (max-width: 15000px) {
+  progress[value] {
+    width: 800px;
+    height: 20px;
+  }
+}
 
 
 
+@media only screen and (max-width: 1305px) {
+    progress[value] {
+      width: 600px;
+      height: 20px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1100px) {
+    progress[value] {
+      width: 300px;
+      height: 20px;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 812px) {
+    #res2{display:none;}
+    progress[value] {
+      width: 300px;
+      height: 20px;
+    }
+
+
+    @media only screen and (max-width: 610px) {
+      #res2{display:none;}
+      progress[value] {
+        width: 200px;
+        height: 20px;
+        align-content: left;
+      }
+      
+    @media only screen and (max-width: 490px) {
+      #res2{display:none;}
+      progress[value] {
+        align-content: left;
+        width: 150px;
+        height: 20px;
+      }
+
+      @media only screen and (max-width: 417px) {
+        #res2{display:none;}
+        progress[value] {
+          width: 150px;
+          height: 20px;
+        }
 
 /* Añadidos para el conflicto en CSS en el test 5. eS EL CSS PARA RANGE-FIELD COMO SE ENCUENTRA EN https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css*/
 
