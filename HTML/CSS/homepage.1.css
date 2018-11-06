@@ -2,18 +2,30 @@ body{font-family: gotham;
     font-style: normal;
 font-size: 20;
 color: rgb(2, 2, 37);
-background:white;
+background-color: #90CAF9;
 margin: 250px;
-border: 1px solid; 
 padding: 15px;
 text-align: justify;
 font-weight: 300;
 margin-top: 100px;
-
 }
 
-button > a {float: center;}
+button#login{background: rgb(247, 165, 72);
+    padding: 0;
+    border: 0px;
+    color: white;
+    text-shadow: 2px 2px 10px #02306b;
+    position: relative;
+    display: inline-block;
 
+    
+
+}
+#soyh3{
+    
+    margin-left:500px;
+
+}
 @font-face {
     font-family: gotham;
     src: url('esta.otf');
@@ -21,13 +33,21 @@ button > a {float: center;}
   }
 
 header{margin: 20px;
-background-color: rgb(157, 216, 183);
 border: rgb(157, 216, 183);
 border-radius: 15px;}
-button{float: right}
-h1{text-align: center;}
 
-h2{border: salmon solid 5px;
+h1#psico{position: absolute;
+font-size: 200px;}
+
+h1{position: absolute;
+    font-size: 200px;
+padding-bottom: 100px;
+color: rgb(83, 172, 245);
+text-shadow: 2px 2px 10px #02306b;
+}
+
+
+h3{border: salmon solid 5px;
 border-radius:25px;
 border-block-start-width: 5px;
 border-block-end-width: -50px;
@@ -38,7 +58,16 @@ text-align: center;
 font-size: 16px;
 }
 
+section{border: 5px dashed;
+    border-color: rgb(83, 172, 245);
+   align-content: center; 
+   display: block;
 
+}
+
+section > #brain {width: 1000px;
+
+}
 
 
 progress{background-color: rgb(157, 216, 183);}
@@ -56,7 +85,7 @@ div{ margin: 30px;
    
 
    }
-}
+
 @media screen and (min-width:368px){
    div{width: 100%;}
     
