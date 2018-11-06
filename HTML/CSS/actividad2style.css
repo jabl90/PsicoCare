@@ -57,3 +57,25 @@ footer{
     border: white solid;
     cursor: pointer;
     }
+
+    
+.submitboton{
+    background-position: 100%;
+    background-color: transparent;
+    color: black;
+    border:none;
+    
+  }
+  .submitboton:hover {
+    color: #fff;
+    border: 3px solid #c266d3;
+    background-image: -webkit-linear-gradient(30deg, #c266d3 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #c266d3 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+  }
+
+  

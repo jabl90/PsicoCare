@@ -1,8 +1,31 @@
+let path=1;
+
+
+document.getElementById('test5').onclick = (function (evnt) {
+    
+    answer = document.getElementById('test5').value;
+   
+    path=2;
+    });
+    
+       
+    
+
+
+
+function botofuncion(number) {
+
+    pregunta=document.getElementById(number);
+    numerorespuesta=(number);
+    answer=numerorespuesta;
+    path=2;
+    }
+
 
 function guardarResp(idx) {
-    if (document.getElementById('res1').onclick === true) {
-
         document.getElementById('res1').onclick = (function (evnt) {
+
+        if(path=1){         
         var radios = document.getElementsByName('question') 
 
         for (var i = 0, length = radios.length; i < length; i++) {
@@ -13,19 +36,27 @@ function guardarResp(idx) {
                 // only one radio can be logically checked, don't check the rest
                 break;
             }
-        }else{break}
+        }
+
+
+    }   
         // Guardamos respuesta
         let respuestastest = [];
         let respuestastestStr = window.localStorage.getItem('respuestasTest');
+        
 
         if (respuestastestStr) {
             respuestastest = JSON.parse(respuestastestStr);
+           
         }
         
-        respuestastest[idx] = answer
+        respuestastest[idx] = answer;
         window.localStorage.setItem('respuestasTest', JSON.stringify(respuestastest));
     });
 }
+
+guardarResp(5);
+
 
 (function () {
     let respuestastest = []
