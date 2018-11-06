@@ -12,7 +12,7 @@ h1{margin: 20px;
     background-color: rgb(157, 216, 183);
     border: rgb(157, 216, 183);
     border-radius: 15px;
-text-align: center;}
+    text-align: center;}
 
 p{font-size: 18px;}
 
@@ -22,9 +22,7 @@ p{font-size: 18px;}
    unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
   }
 
-  
-
-  .miboton {
+    .miboton {
     border: yellow solid 1px;;
     background-color: white ;
     border-radius: 10px;
@@ -44,16 +42,10 @@ p{font-size: 18px;}
     cursor: pointer;
     }
     .vuelta{
-
-        width: 40px;
-        -webkit-transform: rotate(180deg);
+    width: 40px;
+    -webkit-transform: rotate(180deg);
        
-       
-       
-       }
-       
-       .ida{
-       
-       
-          width: 40px;
-        }
+     }
+    .ida{
+    width: 40px;
+    }
