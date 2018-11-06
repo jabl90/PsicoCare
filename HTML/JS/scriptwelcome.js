@@ -1,4 +1,4 @@
-document.getElementById('register').onclick = (function(event){
+document.getElementById('register').onclick = (function(event){  //Creamos un evento para que al hacer click en el botón de registrarse se pueda detectar si el registro por parte del usuario está incompleto o contiene errores
 
     event.preventDefault();
     document.querySelectorAll('.error').forEach(elem => {
@@ -6,10 +6,10 @@ document.getElementById('register').onclick = (function(event){
     });
     
 let formValid = document.getElementById('loginform').checkValidity();
-let passEqs = (document.getElementById('password').value == document.getElementById('confirm').value);
+let passEqs = (document.getElementById('password').value == document.getElementById('confirm').value); // Validamos el formulario y declaramos una variable para comprobar que el password y el password de confirmación son iguales.
 
 if (formValid && passEqs) {
-    let datosUsuario= {
+    let datosUsuario= { //Creamos el objeto datosUsuario para recoger agrupar la información del usuario.
         yourname:document.getElementById('name').value,
         email:document.getElementById('email').value,
         username: document.getElementById('username').value,
@@ -17,7 +17,7 @@ if (formValid && passEqs) {
         confirmpassword:document.getElementById('confirm').value
     };
 
-    //enviar
+    //Enviamos el formulario
     $.ajax({
         method: "POST",
         url: "http://www.mocky.io/v2/5be016cd320000110064940c",     
@@ -25,16 +25,16 @@ if (formValid && passEqs) {
     }).done(function (data) {
         console.log(data);
         if (data.result) {
-            localStorage.setItem('datosUsuario',JSON.stringify(datosUsuario));
+            localStorage.setItem('datosUsuario',JSON.stringify(datosUsuario)); //almacenamos los datos introducidos por el usuario en el localStorage
 
-            window.location.href = 'profile.html';
+            window.location.href = 'profile.html'; //Una vez registrados nos redirige al menú principal.
         } else {
             document.getElementById('passwordnomatch').classList.remove('hide'); //mensaje de error
         }
         window.localStorage.setItem(data); //almacenar los datos
     });
 
-} else {
+} else { // si los datos introducidos son incorrectos, aparecen los errores correspondientes.
 
     if (!document.getElementById('name').checkValidity()) {
         document.getElementById('errorname').classList.remove('hide');
@@ -50,7 +50,7 @@ if (formValid && passEqs) {
         document.getElementById('errorpassword').classList.remove('hide');
     }
 
-    if(!passEqs){
+    if(!passEqs){ // si los passwords son diferentes, aparece el error correspondiente
 
         document.getElementById('passwordnomatch').classList.remove('hide');
 

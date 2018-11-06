@@ -28,7 +28,7 @@
 					<div class="panel-heading">
 					   <div class="panel-title text-center">
 	      <div id="titulo">
-		<h1>PsicoCare
+		<h1>Welcome to PsicoCare
 		</h1>
 		<hr />
 	  </div>
@@ -44,7 +44,7 @@
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 			<input autofocus type="text" class="form-control" name="name" id="name" placeholder="Enter your Name" minlength="3" required />
-            <div id="errorname" class="hide">Introduce un nombre más largo</div>
+            <div id="errorname" class="error hide">Introduce un nombre más largo</div>
 		</div>
 		</div>
 		</div>
@@ -54,9 +54,8 @@
 			<div class="cols-sm-10">
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-
 			<input type="text" class="form-control" name="email" id="email" placeholder="Enter your Email" required />
-			<div id="erroremail" class="hide">Introduce un email correcto</div>
+			<div id="erroremail" class=" error hide">Introduce un email correcto</div>
 		</div>
 		</div>
 		</div>
@@ -67,7 +66,7 @@
 					<div class="input-group">
 						<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
 			<input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" required minlength="3" />
-		<div id="errorusuario" class="hide">introduce un nombre de usuario correcto</div>
+		<div id="errorusuario" class=" error hide">introduce un nombre de usuario correcto</div>
 		</div>
 		</div>
 		</div>
@@ -79,7 +78,7 @@
 						<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
 			<input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" pattern="[a-zA-Z0-9]*"
 			 required />
-			 <div id="errorpassword" class="hide">Introduce un password correcto. El formato de password no es válido</div>
+			 <div id="errorpassword" class=" error hide">Introduce un password correcto. El formato de password no es válido</div>
 		</div>
 		</div>
 		</div>
@@ -91,7 +90,7 @@
 						<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
 			<input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm your Password" pattern="[a-zA-Z0-9]*"
 			 required />
-			 <div id="passwordnomatch" class="hide">el password no coincide</div>
+			 <div id="passwordnomatch" class="error hide">el password no coincide</div>
 		</div>
 		</div>
 		</div>
