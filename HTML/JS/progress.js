@@ -21,17 +21,19 @@ let respuestastest = []
 let respuestastestStr = window.localStorage.getItem('respuestasTest');
 var resultadosTest = JSON.parse(respuestastestStr);
 let resultadoPrim = resultadosTest[0]
-let resultadoSec = resultadosTest[1]
+let resultadoSecyCuatri = resultadosTest[1] + resultadosTest[3]
 let resultadoTri = resultadosTest[2]
+let resultadoQuinque = resultadosTest[4]
+
 
   var ctx = document.getElementById("myChart");
   var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ["Anxiety", "Depression", "Stress"],
+      labels: ["Anxiety", "Depression", "Stress", "Social Anxiety"],
       datasets: [{
         label: "Test results",
-        data: [resultadoPrim, resultadoSec, resultadoTri],
+        data: [resultadoPrim, resultadoSecyCuatri, resultadoTri, resultadoQuinque],
         backgroundColor: [
           'rgba(255, 99, 132, 0.4)',
           'rgba(54, 162, 235, 0.4)',
