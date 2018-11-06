@@ -84,6 +84,9 @@ margin-left: 100px;
 }
 
 
+textarea::placeholder {
+  color: rgb(19, 5, 5);  
+}
 
 
 

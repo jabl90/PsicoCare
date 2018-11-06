@@ -1,6 +1,6 @@
 
 
-function botofuncion(clicked_id) {
+function botofuncion(number) {
 
  pregunta=document.getElementById(clicked_id);
  numerorespuesta=(clicked_id);
