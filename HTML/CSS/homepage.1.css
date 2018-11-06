@@ -28,7 +28,7 @@ button#login{background: rgb(247, 165, 72);
 }
 @font-face {
     font-family: gotham;
-    src: url('esta.otf');
+    src: url('./CSS/esta.otf');
    unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
   }
 
@@ -58,14 +58,15 @@ text-align: center;
 font-size: 16px;
 }
 
-section{border: 5px dashed;
+body>div {border: 5px dashed;
     border-color: rgb(83, 172, 245);
    align-content: center; 
    display: block;
+   width: 1300px;
 
 }
 
-section > #brain {width: 1000px;
+body>div > #brain {width: 1000px;
 
 }
 
