@@ -35,6 +35,9 @@ let questionnumber = document.getElementById("total").value;
     var questionid =  "question"+questionnumber; 
 console.log(questionid); 
 
+let formValid = document.getElementById('loginform');
+
+
     if (formValid) {
         //ENVIAR
         $.ajax({

@@ -1,3 +1,30 @@
+ let i=[false,false,false,false];
+   function cleartext(number){
+
+
+
+    if(number==1& i[0]==false)
+    { document.getElementById('cuentame1').value = "" ;  i[0]=true;  }   
+
+    if(number==2& i[1]==false)
+    { document.getElementById('cuentame2').value = "" ;  i[1]=true;  }   
+
+    if(number==3& i[2]==false)
+    { document.getElementById('cuentame3').value = "" ;  i[2]=true;  }   
+
+    if(number==4& i[3]==false)
+    { document.getElementById('cuentame4').value = "" ;  i[3]=true;  }   
+
+    
+
+
+
+
+
+
+
+};
+
 document.getElementById('submitboton').onclick = (function (evnt) {
     
  let formValid = document.getElementById('textform');
@@ -5,9 +32,10 @@ document.getElementById('submitboton').onclick = (function (evnt) {
  for (let index = 0; index < formValid.length-1; index++) {
 textarray[index]= formValid[index].value;
 
+
  }
           
-     if (formValid) {
+     if (textarray[0]&textarray[1]&textarray[2]&textarray[3]=="") {
             //ENVIAR
             $.ajax({
                 method: "POST",
@@ -30,3 +58,6 @@ textarray[index]= formValid[index].value;
     
     
     });
+
+
+    
