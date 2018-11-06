@@ -1,34 +1,58 @@
-window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        theme: "light2",
-        title: {
-            text: "Anxiety progress"
-        },
-        axisX:{
-            minimum: 0,
-          },
-        axisY: {
-            includeZero: false,
-            minimum: 0,
-            maximum: 30
-              },
-        data: [{
-            type: "line",
-            dataPoints: [
-                {y: guardarResp (1) 
+Chart.scaleService.updateScaleDefaults('linear', {
+    ticks: {
+      callback: function(tick) {
+        return  tick.toLocaleString();
+      },
+    beginAtZero: true,
+    }
+  });
+  
+  // Global method for setting tooltip number format.
+  Chart.defaults.global.tooltips.callbacks.label = function(tooltipItem, data) {
+    var dataset = data.datasets[tooltipItem.datasetIndex];
+    var datasetLabel = dataset.label || '';
+    return datasetLabel + dataset.data[tooltipItem.index].toLocaleString();
+  };
+  
 
-            
-            },
+  var puntuacion = [0, 1, 2, 3, 4, 5];
+let respuestastest = []
 
-            ]
-           
-        }]
-    });
-    chart.render();
+let respuestastestStr = window.localStorage.getItem('respuestasTest');
+var resultadosTest = JSON.parse(respuestastestStr);
+let resultadoPrim = resultadosTest[0]
+let resultadoSec = resultadosTest[1]
+let resultadoTri = resultadosTest[2]
 
-}
-
+  var ctx = document.getElementById("myChart");
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Anxiety", "Depression", "Stress"],
+      datasets: [{
+        label: "Test results",
+        data: [resultadoPrim, resultadoSec, resultadoTri],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.4)',
+          'rgba(54, 162, 235, 0.4)',
+          'rgba(255, 206, 86, 0.4)',
+          'rgba(75, 192, 192, 0.4)',
+          'rgba(153, 102, 255, 0.4)',
+          'rgba(255, 159, 64, 0.4)'
+        ],
+        borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 2
+      }]
+    }
+  });
+  
 
 
 
