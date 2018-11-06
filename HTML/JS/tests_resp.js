@@ -1,7 +1,5 @@
 
 function guardarResp(idx) {
-    if (document.getElementById('res1').onclick === true) {
-
         document.getElementById('res1').onclick = (function (evnt) {
         var radios = document.getElementsByName('question') 
 
@@ -13,7 +11,7 @@ function guardarResp(idx) {
                 // only one radio can be logically checked, don't check the rest
                 break;
             }
-        }else{break}
+        }
         // Guardamos respuesta
         let respuestastest = [];
         let respuestastestStr = window.localStorage.getItem('respuestasTest');
