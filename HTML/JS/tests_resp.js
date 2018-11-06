@@ -4,7 +4,7 @@ let path=1;
 document.getElementById('test5').onclick = (function (evnt) {
     
     answer = document.getElementById('test5').value;
-    console.log(answer);
+   
     path=2;
     });
     
@@ -16,11 +16,8 @@ document.getElementById('test5').onclick = (function (evnt) {
 function botofuncion(number) {
 
     pregunta=document.getElementById(number);
-    console.log(pregunta)
     numerorespuesta=(number);
-    console.log(numerorespuesta)
     answer=numerorespuesta;
-    console.log(answer);
     path=2;
     }
 
@@ -40,6 +37,8 @@ function guardarResp(idx) {
                 break;
             }
         }
+
+
     }   
         // Guardamos respuesta
         let respuestastest = [];
