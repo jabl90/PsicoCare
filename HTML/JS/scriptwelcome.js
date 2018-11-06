@@ -27,7 +27,7 @@ if (formValid && passEqs) {
         if (data.result) {
             localStorage.setItem('datosUsuario',JSON.stringify(datosUsuario)); //almacenamos los datos introducidos por el usuario en el localStorage
 
-            window.location.href = 'profile.html'; //Una vez registrados nos redirige al menú principal.
+            window.location.href = 'menu.html'; //Una vez registrados nos redirige al menú principal.
         } else {
             document.getElementById('passwordnomatch').classList.remove('hide'); //mensaje de error
         }
