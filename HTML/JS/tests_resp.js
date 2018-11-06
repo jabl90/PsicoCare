@@ -1,8 +1,20 @@
+path=1;
+function botofuncion(number) {
+
+    pregunta=document.getElementById(number);
+    console.log(pregunta)
+    numerorespuesta=(number);
+    console.log(numerorespuesta)
+    answer=numerorespuesta;
+    console.log(answer);
+    path=2;
+    }
+
 
 function guardarResp(idx) {
-    if (document.getElementById('res1').onclick === true) {
-
         document.getElementById('res1').onclick = (function (evnt) {
+
+        if(path=1){         
         var radios = document.getElementsByName('question') 
 
         for (var i = 0, length = radios.length; i < length; i++) {
@@ -13,13 +25,16 @@ function guardarResp(idx) {
                 // only one radio can be logically checked, don't check the rest
                 break;
             }
-        }else{break}
+        }
+    }   
         // Guardamos respuesta
         let respuestastest = [];
         let respuestastestStr = window.localStorage.getItem('respuestasTest');
+        
 
         if (respuestastestStr) {
             respuestastest = JSON.parse(respuestastestStr);
+           
         }
         
         respuestastest[idx] = answer
@@ -27,12 +42,16 @@ function guardarResp(idx) {
     });
 }
 
+guardarResp(5);
+
+
 (function () {
     let respuestastest = []
     let respuestastestStr = window.localStorage.getItem('respuestasTest');
 
     if (respuestastestStr) {
         respuestastest = JSON.parse(respuestastestStr);
+        console.log(respuestastest);
     }
 
     guardarResp(respuestastest.length)
