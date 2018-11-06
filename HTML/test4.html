@@ -49,30 +49,18 @@
                 <p style="text-align:center;font-size:20px;">I am angry because things happen outside my control.<br></p>
             </label>
 
-
-            <table style="align-content: center; margin:auto; font-size:19px;">
-
-                <tr>
-
+            <div id="centrodiv" style="margin-left:38%;" > 
+                    <input style=" display: inline-block;" class="botoninput" type="button" id="5" name="question"  value="Very often"  onclick="botofuncion(this.id)">
+                  
+                    <input class="botoninput" type="button" id="4" name="question"  value="Fairly often" onclick="botofuncion(this.id)">
                     
-                    <td> <input class="botoninput" type="button" id="5" name="question"  value="Very often"  onclick="botofuncion(this.id)">
-                    </td>
-                    <td> <input class="botoninput" type="button" id="4" name="question"  value="Fairly often" onclick="botofuncion(this.id)">
-                    </td>
-                    <td> <input class="botoninput" type="button" id="3" name="question"  value="Sometimes" onclick="botofuncion(this.id)">
-                    </td>
-                    <td> <input class="botoninput" type="button" id="2" name="question"  value="Almost never" onclick="botofuncion(this.id)">
-                    </td>
-
-                    <td> <input class="botoninput" type="button" id="1" name="question"  value="Never" onclick="botofuncion(this.id)">
-                    </td>
-
-                </tr>
+                    <input class="botoninput" type="button" id="3" name="question"  value="Sometimes" onclick="botofuncion(this.id)">
+                    
+                    <input class="botoninput" type="button" id="2" name="question"  value="Almost never" onclick="botofuncion(this.id)">
 
 
-
-
-            </table>
+                    <input class="botoninput" type="button" id="1" name="question"  value="Never" onclick="botofuncion(this.id)">
+                </div>
 
         </form>
         </div>
@@ -89,7 +77,7 @@
 
             <tr>
                 <td><a href="test3.html"><img class="vuelta" src="IMG/arrow.png"></a></td>
-                <td><label for="total">
+                <td><label id="res2" for="total">
                         <p>&nbsp;&nbsp;Total progress 4 out of 5</p>
                 </td>
                 <td>

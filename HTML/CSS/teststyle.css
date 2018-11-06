@@ -156,6 +156,21 @@ header  {
 }
 
 
+#navid {
+  background-color: #90CAF9 !important;
+  border: none;
+  width:100%;
+  position: relative;
+  font-size: 2.1rem;
+  margin-top:-50px;
+  margin-bottom:-1px;
+  -webkit-box-shadow: 0 5px 6px -6px #777;
+  -moz-box-shadow: 0 8px 6px -6px #777;
+  box-shadow: 0 8px 6px -6px #777;
+
+}
+
+
 div .brandname{display: inline-block !important}
 #logo {
     display: inline-block;
@@ -272,6 +287,9 @@ display: inline-block; }
     width: 800px;
     height: 20px;
   }
+  input{ position: relative;
+    align-items: center;
+    }
 }
 
 
@@ -302,27 +320,57 @@ display: inline-block; }
 
 
     @media only screen and (max-width: 610px) {
-      #res2{display:none;}
+      #res2{display:none; ;}
       progress[value] {
         width: 200px;
         height: 20px;
-        align-content: left;
-      }
+    }
+
+    @media only screen and (max-width: 520px) {
+      #res2{display:none; ;}
+      progress[value] {
+        width: 200px;
+        height: 20px;
+    }
+    #test5{width: 250px;margin-left:20%;}
+  
+  
+  }
+
       
     @media only screen and (max-width: 490px) {
       #res2{display:none;}
       progress[value] {
-        align-content: left;
+       
         width: 150px;
         height: 20px;
       }
+      @media only screen and (max-width: 449px) {
+        #res2{display:none;}
+        progress[value] {
+         
+          width: 150px;
+          height: 20px;
+        }
+  
 
       @media only screen and (max-width: 417px) {
         #res2{display:none;}
         progress[value] {
           width: 150px;
           height: 20px;
+          
         }
+        @media only screen and (max-width: 360px) {
+          #res2{display:none;}
+          #test5{width: 210px;margin-left:20%;}
+
+          progress[value] {
+            display: none;
+            
+          }
+
+          
 
 /* Añadidos para el conflicto en CSS en el test 5. eS EL CSS PARA RANGE-FIELD COMO SE ENCUENTRA EN https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css*/
 
