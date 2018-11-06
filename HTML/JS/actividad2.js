@@ -1,3 +1,6 @@
+
+document.getElementById( 'dropdown1' ).dropdown();
+
 document.getElementById('submitboton').onclick = (function (evnt) {
     
  let formValid = document.getElementById('textform');

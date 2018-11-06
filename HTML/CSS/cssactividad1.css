@@ -3,9 +3,10 @@ body{font-family: gotham;
 font-size: 20;
 color: rgb(2, 2, 37);
 background:white;
-padding: 15px;
 text-align: justify;
 }
+
+#bodypad {padding: 20px}
 #logo {
     display: inline-block;
     margin-bottom: 0px;
