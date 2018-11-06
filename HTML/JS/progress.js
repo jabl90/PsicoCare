@@ -11,7 +11,7 @@ Chart.scaleService.updateScaleDefaults('linear', {
   Chart.defaults.global.tooltips.callbacks.label = function(tooltipItem, data) {
     var dataset = data.datasets[tooltipItem.datasetIndex];
     var datasetLabel = dataset.label || '';
-    return datasetLabel + dataset.data[tooltipItem.index].toLocaleString();
+    return datasetLabel + ": " + dataset.data[tooltipItem.index].toLocaleString();
   };
   
 
@@ -21,7 +21,7 @@ let respuestastest = []
 let respuestastestStr = window.localStorage.getItem('respuestasTest');
 var resultadosTest = JSON.parse(respuestastestStr);
 let resultadoPrim = resultadosTest[0]
-let resultadoSecyCuatri = resultadosTest[1] + resultadosTest[3]
+let resultadoSecyCuatri = parseInt(resultadosTest[1]) + parseInt(resultadosTest[3]);
 let resultadoTri = resultadosTest[2]
 let resultadoQuinque = resultadosTest[4]
 
@@ -30,7 +30,7 @@ let resultadoQuinque = resultadosTest[4]
   var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ["Anxiety", "Depression", "Stress", "Social Anxiety"],
+      labels: ["Depression", "Stress", "Social Anxiety", "Anxiety"],
       datasets: [{
         label: "Test results",
         data: [resultadoPrim, resultadoSecyCuatri, resultadoTri, resultadoQuinque],

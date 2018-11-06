@@ -9,9 +9,6 @@ document.getElementById('test5').onclick = (function (evnt) {
     });
     
        
-    
-
-
 
 function botofuncion(number) {
 
