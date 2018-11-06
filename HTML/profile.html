@@ -79,14 +79,14 @@
           </div>
           <div class="row"> Cambiar password
               <div id="cambiarpassword" class="input-field col s12">
-                <input id="passwordcambiar" type="password" class="validate" pattern="[a-zA-Z0-9]*" required>
+                <input id="passwordcambiar" type="password" class="validate" minlength="4" maxlength="10" pattern="[a-zA-Z0-9]*" required>
                 <div id="errorcambiarpassword" class="error hide">La contraseña no es correcta</div>
                 <div id="passwordcorrecto" class="hide">Contraseña correcta, introduzca la nueva contraseña</div>
                 <label for="passwordcambiar">Contraseña actual</label>
               </div>
               
               <div class="input-field col s12">
-                    <input id="passwordnuevo" type="password" class="validate"pattern="[a-zA-Z0-9]*"required>
+                    <input id="passwordnuevo" type="password" class="validate" minlength="4" maxlength="10" pattern="[a-zA-Z0-9]*"required>
                     <div id="errorpasswordnuevo" class="error hide"></div>
                     <label for="passwordnuevo">Nueva contraseña</label>
                   </div>

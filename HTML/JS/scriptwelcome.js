@@ -34,7 +34,7 @@ if (formValid && passEqs) {
         window.localStorage.setItem(data); //almacenar los datos
     });
 
-} else { // si los datos introducidos son incorrectos, aparecen los errores correspondientes.
+} else { // si los datos introducidos son incorrectos,y no se valida el formulario, aparecen los errores correspondientes.
 
     if (!document.getElementById('name').checkValidity()) {
         document.getElementById('errorname').classList.remove('hide');
