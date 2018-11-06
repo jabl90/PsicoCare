@@ -1,24 +1,4 @@
-body{font-family: gotham;
-    font-style: normal;
-font-size: 20;
-color: rgb(2, 2, 37);
-background:white;
-text-align: justify;
-
-}
-
-h1{margin: 20px;
-    background-color: rgb(157, 216, 183);
-    border: rgb(157, 216, 183);
-    border-radius: 15px;
-text-align: center;}
-
-@font-face {
-    font-family: gotham;
-    src: url('esta.otf');
-   unicode-range: U+00-52F, U+1E00-1FFF, U+2200–22FF;
-  }
-
+/* 
   button{
     border: salmon solid 5px; 
     border-radius: 15px;
@@ -28,9 +8,9 @@ text-align: center;}
     text-decoration: none;
     float: 20%;
     font-size: 2em;
-}
+} */
 footer > div{display: inline-block}
-img{
+/* img{
     width: 50px;
     height: 50px; 
     display: inline-block;
@@ -55,4 +35,4 @@ p{margin-left: 80px;
     border: 5px solid grey;
 }
 
-.globo2
+.globo2 */
