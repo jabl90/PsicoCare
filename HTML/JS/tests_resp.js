@@ -1,4 +1,18 @@
-path=1;
+let path=1;
+
+
+document.getElementById('test5').onclick = (function (evnt) {
+    
+    answer = document.getElementById('test5').value;
+    console.log(answer);
+    path=2;
+    });
+    
+       
+    
+
+
+
 function botofuncion(number) {
 
     pregunta=document.getElementById(number);
@@ -37,7 +51,7 @@ function guardarResp(idx) {
            
         }
         
-        respuestastest[idx] = answer
+        respuestastest[idx] = answer;
         window.localStorage.setItem('respuestasTest', JSON.stringify(respuestastest));
     });
 }
@@ -51,7 +65,6 @@ guardarResp(5);
 
     if (respuestastestStr) {
         respuestastest = JSON.parse(respuestastestStr);
-        console.log(respuestastest);
     }
 
     guardarResp(respuestastest.length)
