@@ -5,6 +5,8 @@ color: rgb(2, 2, 37);
 background:white;
 text-align: justify;
 }
+
+#bodypad {padding: 20px}
 #logo {
     display: inline-block;
     margin-bottom: 0px;

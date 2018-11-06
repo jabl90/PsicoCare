@@ -76,4 +76,15 @@ h2{border: white solid 5px;
     
     }
 
-    
+
+@media only screen and (max-width: 992px){
+    .hide-on-med-and-down {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 599px){
+    .hide-on-med-and-down {
+        display: none !important;
+    }
+}
