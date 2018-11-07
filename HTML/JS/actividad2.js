@@ -1,7 +1,6 @@
-<<<<<<< HEAD
+/*document.getElementById( 'dropdown1' ).dropdown();  Algo pasa con esta mierda que interfiere con scripts y no funciona*/
 
-document.getElementById( 'dropdown1' ).dropdown();
-=======
+
 let i = [false, false, false, false];
 function cleartext(number) {
 
@@ -24,7 +23,9 @@ function cleartext(number) {
 
 
 };
->>>>>>> 31b3b18c737173c43f8f30ee25a5f7d32a7789a9
+
+
+
 
 document.getElementById('submitboton').onclick = (function (evnt) {
 
