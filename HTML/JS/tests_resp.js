@@ -3,9 +3,7 @@ let path=1;
 
 document.getElementById('test5').onclick = (function (evnt) {
     
-    answer = document.getElementById('test5').value;
-   
-    path=2;
+    alert("Has clickado")
     });
     
        
